@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scalable Microservices Architecture - Honors Project</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+
+    <header style="background: linear-gradient(to right, #4facfe, #00f2fe); height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center; color: white;">
+        <div class="hero-content">
+            <h1 style="font-size: 4rem; margin-bottom: 20px;">Building a Scalable Microservices Architecture</h1>
+            <p style="font-size: 1.5rem; margin-bottom: 30px;">Deploying Scalable Solutions using Docker, Kubernetes, and Helm</p>
+            <a href="#project-details" class="cta-btn" style="padding: 10px 30px; background-color: #00f2fe; color: white; text-decoration: none; border-radius: 5px; font-size: 1.2rem;">Explore the Project</a>
+        </div>
+    </header>
+    <section id="project-details" style="padding: 60px 20px; text-align: center; background-color: #f8f8f8;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Project Overview</h2>
+        <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">In this project, we demonstrate how to build a scalable microservices architecture using the latest technologies such as Docker, Kubernetes, and Helm. The aim is to implement a CI/CD pipeline for seamless deployment.</p>
+        <div class="features" style="display: flex; justify-content: space-around; margin-top: 40px;">
+            <div class="feature-item" style="flex: 1; padding: 20px;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Docker</h3>
+                <p style="font-size: 1.1rem;">Containerizing the applications for easy deployment and management.</p>
+            </div>
+            <div class="feature-item" style="flex: 1; padding: 20px;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Kubernetes</h3>
+                <p style="font-size: 1.1rem;">Orchestrating containers to ensure scalability and high availability.</p>
+            </div>
+            <div class="feature-item" style="flex: 1; padding: 20px;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Helm</h3>
+                <p style="font-size: 1.1rem;">Managing Kubernetes deployments with Helm charts for version control and automation.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cta" style="background-color: #333; padding: 40px; text-align: center; color: white;">
+        <h2 style="font-size: 2rem; margin-bottom: 20px;">Check Out the Project</h2>
+        <a href="https://github.com/DhanusEM/capstone" class="cta-btn" style="padding: 10px 20px; background-color: #4facfe; color: white; text-decoration: none; border-radius: 5px; font-size: 1.2rem;">View on GitHub</a>
+    </section>
+
+    <footer style="padding: 20px; text-align: center; background-color: #333; color: white;">
+        <p>Contact: dhanusemdts@gmail.com</p>
+        <p>Follow on <a href="#" style="color: #00f2fe; text-decoration: none;">LinkedIn</a> | <a href="#" style="color: #00f2fe; text-decoration: none;">GitHub</a></p>
+    </footer>
+
+    <script>
+        document.querySelector('.cta-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            window.scrollTo({
+                top: target.offsetTop,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+</html>

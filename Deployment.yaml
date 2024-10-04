@@ -1,0 +1,19 @@
+apiVersion: apps/latest
+kind: Deployment
+metadata:
+  name: user-service-deployment
+spec:
+  replicas: 3  
+  selector:
+    matchLabels:
+      app: user-service
+  template:
+    metadata:
+      labels:
+        app: user-service
+    spec:
+      containers:
+      - name: user-service
+        image: user-service:latest
+        ports:
+        - containerPort: 5000
